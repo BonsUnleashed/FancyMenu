@@ -5,7 +5,7 @@ import org.joml.Quaternionf;
 
 public final class RenderRotationUtil {
 
-    private static final ThreadLocal<RotationState> ACTIVE_RENDER_ROTATION_FANCYMENU = ThreadLocal.withInitial(RotationState::new);
+    private static final ThreadLocal<RotationState> ACTIVE_RENDER_ROTATION_FANCYMENU = RenderThreadLocal.withInitial(RotationState::new);
 
     private RenderRotationUtil() {
     }

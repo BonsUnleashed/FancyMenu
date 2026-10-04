@@ -6,7 +6,7 @@ import org.jetbrains.annotations.ApiStatus;
 public final class RenderTranslationUtil {
 
     private static final float DEFAULT_TRANSLATION_FANCYMENU = 0.0F;
-    private static final ThreadLocal<TranslationState> ACTIVE_RENDER_TRANSLATION_FANCYMENU = ThreadLocal.withInitial(TranslationState::new);
+    private static final ThreadLocal<TranslationState> ACTIVE_RENDER_TRANSLATION_FANCYMENU = RenderThreadLocal.withInitial(TranslationState::new);
 
     private RenderTranslationUtil() {
     }

@@ -6,7 +6,7 @@ import org.jetbrains.annotations.ApiStatus;
 public final class RenderScaleUtil {
 
     private static final float DEFAULT_RENDER_SCALE_FANCYMENU = 1.0F;
-    private static final ThreadLocal<Float> ACTIVE_RENDER_SCALE_FANCYMENU = ThreadLocal.withInitial(() -> DEFAULT_RENDER_SCALE_FANCYMENU);
+    private static final ThreadLocal<Float> ACTIVE_RENDER_SCALE_FANCYMENU = RenderThreadLocal.withInitial(() -> DEFAULT_RENDER_SCALE_FANCYMENU);
 
     private RenderScaleUtil() {
     }
